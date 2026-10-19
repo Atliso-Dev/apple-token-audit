@@ -1,6 +1,6 @@
 # Apple Token Audit for Intune
 
-[![Tests](https://github.com/Atliso-Dev/apple-token-audit/actions/workflows/test.yml/badge.svg)](https://github.com/Atliso-Dev/apple-token-audit/actions/workflows/test.yml)
+[![Tests](https://github.com/Atliso-Dev/apple-token-audit/actions/workflows/test.yml/badge.svg)](https://github.com/Atliso-Dev/apple-token-audit/actions/workflows/test.yml) [![PowerShell Gallery](https://img.shields.io/powershellgallery/v/Atliso-AppleTokenAudit?label=PowerShell%20Gallery)](https://www.powershellgallery.com/packages/Atliso-AppleTokenAudit)
 
 Read-only PowerShell script that lists the three Apple dates in Intune that expire every year: the Apple MDM push certificate, every ADE enrolment program token and every Apps and Books (VPP) token. For each one you get the expiry date, days left and the Apple ID behind it.
 
@@ -26,7 +26,13 @@ Two of these are an annoyance when they lapse. The push certificate is not. Rene
 Install-Module Microsoft.Graph.Authentication -Scope CurrentUser
 ```
 
-2. Download [`Atliso-AppleTokenAudit.ps1`](Atliso-AppleTokenAudit.ps1) and check the config at the top:
+2. Install the script from the [PowerShell Gallery](https://www.powershellgallery.com/packages/Atliso-AppleTokenAudit), or download [`Atliso-AppleTokenAudit.ps1`](Atliso-AppleTokenAudit.ps1) from this repo:
+
+```powershell
+Install-Script Atliso-AppleTokenAudit -Scope CurrentUser
+```
+
+   Then check the config at the top:
 
 ```powershell
 # ===== CONFIG =====
