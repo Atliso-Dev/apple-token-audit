@@ -105,7 +105,7 @@ CI runs them on Windows PowerShell 5.1 and PowerShell 7.
 
 What each date breaks, and how to renew each one without forcing a re-enrolment: [Apple MDM push certificate expired in Intune? Check all 3 Apple dates](https://atliso.com/blog/intune-apple-mdm-push-certificate-expired)
 
-Want this checked every night instead of once a year? [Atliso Pro](https://atliso.com/pro?ref=apple-token-audit) checks the push certificate and every ADE and VPP token daily and flags anything inside 30 days. The first scan is free.
+Want this checked every night instead of once a year? [Atliso](https://atliso.com/pro?ref=apple-token-audit) checks the push certificate and every ADE and VPP token nightly, across every client tenant, and flags anything inside 30 days. Start with a 30-day free trial.
 
 ## License
 
